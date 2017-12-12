@@ -9,6 +9,49 @@
     <link rel="stylesheet" href="assets/css/media.css">
   </head>
   <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="navbar-header">
+              <h2>Lista de Contactos</h2>
+            </div>
+          </div>
+          <div class="col-md-6 boton">
+            <a class="btn-plus btn btn-primary" href="#modal-plus" data-toggle="modal" role="button"><span class="fa fa-plus"></span></a>
+            <!--modal de agregar contacto-->
+            <div class="modal fade" id="modal-plus" tabindex="-1" role="dialog" aria-labelledby="modal-plusLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Contactos</h3>
+                  </div>
+                  <div class="modal-body">
+                    <div class="box-text">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="exampleInputName2"><span class="fa fa-user-circle-o"></span></label>
+                          <input type="text" class="form-control input-contacto" id="exampleInputName2" placeholder="Nombre:">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail2"><span class="fa fa-phone"></span></label>
+                          <input type="text" class="form-control input-telefono" id="exampleInputEmail2" placeholder="Teléfono:">
+                        </div>
+                        <button type="submit" class="bnt-agregar btn btn-default">Agregar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn-search btn btn-primary" href="#" role="button"><span class="fa fa-search"></span></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- contenedor comentarios -->
+    <div id="cont"></div>
 
     <script src="https://use.fontawesome.com/7873633050.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
